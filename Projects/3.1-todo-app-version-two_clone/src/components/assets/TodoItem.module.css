@@ -1,0 +1,12 @@
+.AppBody {
+    color: #fff;
+    background: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.kgRow {
+    margin: 10px;
+}
+
