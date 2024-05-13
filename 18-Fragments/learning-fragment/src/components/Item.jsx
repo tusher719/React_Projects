@@ -6,8 +6,6 @@ const Item = ({ foodItem }) => {
         <span className={css['kg-span']}>{foodItem}</span>
     </li>;
 
-
-    
 };
 
 export default Item;
