@@ -8,6 +8,7 @@ import FoodInput from './components/FoodInput';
 function App() {
   let foodItems = ['Sabzi', 'Green Vegetable', 'Roti', 'Salad', 'Milk', 'Meat'];
   
+  
   return (
     <>
     <Container>
