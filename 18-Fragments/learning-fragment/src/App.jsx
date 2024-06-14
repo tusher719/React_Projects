@@ -19,8 +19,6 @@ function App() {
       let newItems = [...foodItems, newFoodItem];
       setFoodItems(newItems);
     }
-    // console.log(event);
-    // setTextState(event.target.value);
 }
 
   return (
@@ -29,14 +27,8 @@ function App() {
       <h1 className='fooding-heading'>Healthy Food</h1>
       <FoodInput handleKeyDown={onKeyDown}/>
       <ErrorMessage items={foodItems} />
-      {/* <p>{textToShow}</p> */}
       <FoodItems items={foodItems} />
     </Container>
-
-    {/* <Container>
-    <p>Above is the list of healthy foods that are good for your health and well being.</p>
-    </Container> */}
-
     </>
   );
 }
