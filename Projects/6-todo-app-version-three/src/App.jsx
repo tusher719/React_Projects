@@ -7,6 +7,7 @@ import './style.css';
 
 function App() {
 
+  // Insert Item
   const [todoItems, setTodoItems] = useState([]);
 
   const handleNewItem = (itemName, itemDueDate) => {
@@ -18,12 +19,19 @@ function App() {
     setTodoItems(newTodoItems);
   }
 
+  // Delete Item
+  const handleDeleteItem = (todoItemName) => {
+    const newTodoItems = todoItems.filter(item => item.name !== todoItemName);
+    console.log(`Item Delete: ${todoItemName}`);
+    setTodoItems(newTodoItems);
+  }
+
   return (
   <center className="todo-container">
     <AppName/>
     <AddTodo onNewItem={handleNewItem}/>
     {todoItems.length === 0 && <WellcomeMessage />}
-    <TodoItems todoItems={todoItems}></TodoItems>
+    <TodoItems todoItems={todoItems} onDeleteClick={handleDeleteItem}></TodoItems>
   </center>
   )
 }
