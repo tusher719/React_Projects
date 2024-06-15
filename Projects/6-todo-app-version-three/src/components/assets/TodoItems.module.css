@@ -1,0 +1,10 @@
+.itemsContainer {
+    text-align: left;
+}
+
+.itemsBG {
+    /* background-color: #6c757d; */
+    display: block;
+    align-items: center;
+    /* padding: 10px 10px; */
+}
