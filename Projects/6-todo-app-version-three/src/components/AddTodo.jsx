@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import styles from './assets/AddTodo.module.css';
+import { IoMdAdd } from "react-icons/io";
 
 function AddTodo({onNewItem}) {
 
@@ -31,7 +32,9 @@ function AddTodo({onNewItem}) {
                     <input type="date" value={dueDate} onChange={handleDateChange} className={styles.inputTxt}/>
                 </div>
                 <div className="col-2">
-                    <button type="button" className="btn btn-success kg-button" onClick={handleAddBtnClicked}>Add</button>
+                    <button type="button" className="btn btn-success kg-button" onClick={handleAddBtnClicked}>
+                        <IoMdAdd />
+                    </button>
                 </div>
             </div>
         </div>
