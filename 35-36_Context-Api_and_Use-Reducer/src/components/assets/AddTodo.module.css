@@ -1,0 +1,20 @@
+.AppHeading {
+    display: block;
+    align-items: center;
+    background-color: #20c997;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.inputTxt {
+    padding: 2px 4px;
+    border-radius: 3px;
+    border: 2px solid #ccc;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+
+.inputTxt:focus {
+    border: 2px solid #fd7e14;
+    outline: none;
+}
