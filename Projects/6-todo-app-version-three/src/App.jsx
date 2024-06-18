@@ -12,12 +12,12 @@ function App() {
 
   const handleNewItem = (itemName, itemDueDate) => {
     console.log(`New Item Added: ${itemName} Date: ${itemDueDate}`);
-    const newTodoItems = [
-      ...todoItems,
-      { name: itemName, dueDate: itemDueDate, }
-    ];
-    setTodoItems(newTodoItems);
-  }
+    
+    setTodoItems((currntValue) => [
+        ...currntValue,
+        { name: itemName, dueDate: itemDueDate, }
+      ]);
+  };
 
   // Delete Item
   const handleDeleteItem = (todoItemName) => {
