@@ -1,8 +1,10 @@
-import { useRef, useState } from 'react';
+import { useContext, useRef, useState } from 'react';
 import styles from './assets/AddTodo.module.css';
 import { IoMdAdd } from "react-icons/io";
+import { TodoItemsContext } from '../store/todo-items-store';
 
-function AddTodo({onNewItem}) {
+function AddTodo() {
+    const {addNewItem} = useContext(TodoItemsContext);
     const todoNameElement =  useRef();
     const dueDateElement =  useRef();
 
@@ -11,7 +13,7 @@ function AddTodo({onNewItem}) {
         const dueDate = dueDateElement.current.value;
         todoNameElement.current.value = '';
         dueDateElement.current.value = '';
-        onNewItem(todoName, dueDate);
+        addNewItem(todoName, dueDate);
     }
 
     return (
