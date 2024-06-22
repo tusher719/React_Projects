@@ -27,7 +27,10 @@ const Post = ({ post }) => {
                             </span>
                         ))}
                     </div>
-                    <div>
+                    <div
+                        className="d-flex justify-content-between align-items-center text-primary"
+                        style={{ width: "35px" }}
+                    >
                         <FaRegHeart />
                         {post.reactions}
                     </div>
