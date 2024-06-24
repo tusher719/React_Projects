@@ -9,7 +9,7 @@ const Post = ({ post }) => {
     return (
         <div className="card post-card">
             <div className="card-body">
-                <div className="d-flex justify-content-between align-items-center">
+                <div className="d-flex justify-content-between align-items-start">
                     <h5 className="card-title">{post.title}</h5>
                     <span onClick={() => deletePost(post.id)}>
                         <RiDeleteBin6Fill className="text-danger" />
